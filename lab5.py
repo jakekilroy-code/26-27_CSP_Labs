@@ -28,6 +28,18 @@ def main():
     draw_line(t, 10, 10 + HEIGHT, 10, 10)
     # Draw bottom-right corner
     x1 = 10
+    y1 = 630
+    x2 = 980
+    y2 = 15
+    for l in range(50):
+        draw_line(t, x1, y1, x2, y2)
+        y2 += 6
+        x1 += 6
+
+
+
+    # Draw bottom-left corner
+    x1 = 10
     y1 = 3
     x2 = 20
     y2 = 640
@@ -35,11 +47,6 @@ def main():
         draw_line(t, x1, y1, x2, y2)
         y1 += 13
         x2 += 20
-
-
-
-
-    # Draw bottom-left corner
 
     # Draw top-right corner
     x1 = 10
